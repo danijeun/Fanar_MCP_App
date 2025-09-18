@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanar LLM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <div class="external-link-icon">
+                    <i class="fas fa-external-link-alt"></i>
+                </div>
+            </div>
+            <div class="header-right">
+                <button id="open-transcript" class="action-btn" title="View transcript">
+                    <i class="fas fa-file-alt"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Arabic Calligraphy Logo -->
+            <div class="logo-section">
+                <div class="arabic-logo">
+                    <!-- This will be styled with CSS to look like Arabic calligraphy -->
+                    <div class="calligraphy-text">فَنَّار</div>
+                </div>
+                <h1 class="brand-name">FANAR</h1>
+            </div>
+
+            <!-- Chat Interface -->
+            <div class="chat-interface">
+                <div class="chat-container">
+                    <div id="chat-messages" class="chat-messages">
+                        <!-- Messages will be added here dynamically -->
+                    </div>
+                </div>
+
+                <!-- Input Area -->
+                <div class="input-area">
+                    <div class="input-wrapper">
+                        <div class="input-actions-left">
+                            <button class="action-btn" title="Attach file">
+                                <i class="fas fa-paperclip"></i>
+                            </button>
+                            <button class="action-btn" title="Location">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </button>
+                            <button class="action-btn" title="Camera">
+                                <i class="fas fa-camera"></i>
+                            </button>
+                        </div>
+                        
+                        <div class="input-field-container">
+                            <textarea 
+                                id="message-input" 
+                                placeholder="Message Fanar..."
+                                rows="1"
+                            ></textarea>
+                        </div>
+                        
+                        <div class="input-actions-right">
+                            <button id="send-button" class="send-btn" title="Send message">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                            <button class="action-btn" title="Voice input">
+                                <i class="fas fa-microphone"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="loading-spinner">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>Fanar is thinking...</p>
+        </div>
+    </div>
+
+    <!-- Transcript Modal -->
+    <div id="transcript-modal" class="transcript-modal hidden">
+        <div class="transcript-dialog">
+            <div class="transcript-header">
+                <h2>Conversation Transcript</h2>
+                <div class="transcript-actions">
+                    <button id="copy-transcript" class="action-btn" title="Copy transcript">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                    <button id="close-transcript" class="action-btn" title="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <pre id="transcript-content" class="transcript-content"></pre>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html> 
