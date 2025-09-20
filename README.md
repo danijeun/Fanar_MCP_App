@@ -8,7 +8,7 @@ The Fanar Web App combines:
 - **Fanar LLM API**: For natural language processing
 - **Fanar MCP Server**: For tool and resource access
 - **Prompt Engineering**: For function calling without native support
-- **Web Interface**: Modern, responsive web UI similar to Cursor and Claude Desktop
+- **Web Interface**: Modern, responsive web UI similar to current Fanar App
 
 ## Features
 
@@ -83,7 +83,7 @@ npm run web-app-built
 
 The web app provides a modern, responsive interface with:
 
-- **Clean Design**: Modern UI similar to Cursor and Claude Desktop
+- **Clean Design**: Modern UI similar to Fanar App
 - **Real-time Chat**: Interactive chat interface
 - **Tool Integration**: Automatic tool calling through the UI
 - **Conversation History**: Persistent conversation context
