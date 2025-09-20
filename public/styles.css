@@ -291,6 +291,15 @@ body.show-background-logo::after {
     margin: 0 12px;
 }
 
+/* Only show text input: hide left/right action areas and buttons */
+.input-actions-left {
+    display: none !important;
+}
+
+.input-actions-right {
+    display: none !important;
+}
+
 #message-input {
     width: 100%;
     background: transparent;
