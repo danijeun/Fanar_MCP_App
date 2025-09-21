@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/danijeun-fanar-mcp-app-badge.png)](https://mseep.ai/app/danijeun-fanar-mcp-app)
+
 # Fanar Web App with MCP Integration
 
 ## Overview
